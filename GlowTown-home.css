@@ -1,0 +1,287 @@
+body{
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+html {
+scroll-behavior:smooth;
+}
+
+.header{
+background-color: #0d1f23;
+}
+.contener1{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 85px;
+  position: static;
+}
+
+.header .container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .links {
+  position: relative;
+}
+.header .links:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+.header .links .icon {
+  width: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.header .links .icon span {
+  background-color: #AFB3B7;
+  margin-bottom: 5px;
+  height:3px;
+  transition: 0.3s;
+}
+.header .links .icon span:first-child {
+  width: 100%;
+}
+.header .links .icon span:nth-child(2) {
+  width: 60%;
+}
+.header .links .icon span:last-child {
+  width: 100%;
+}
+.header .links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #afb3b784;
+  position: absolute;
+  right: 0;
+  min-width: 250px;
+  top: calc(100% + 15px);
+  display: none;
+  z-index: 1;
+  border-radius: 15px;
+}
+.header .links ul::before {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #AFB3B7 transparent;
+  position: absolute;
+  right: 11px;
+  top: -20px;
+}
+.header .links:hover ul {
+  display: block;
+}
+.header .links ul li a {
+  display: block;
+  text-decoration: none;
+  color: #0D1F23;
+  transition: 0.3s;
+}
+.header .links ul li a:hover {
+  padding-left: 25px;
+}
+.header .links ul li:not(:last-child) a {
+  border-bottom: 1px solid #0d1f23
+}
+.header1{
+  font-size: 25px;
+  color: #d2deeb;
+}
+a{
+  margin: 10px;
+  margin-left: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s;
+}
+a:hover{
+  text-decoration:underline;
+}
+
+
+.intro{
+  background-image:linear-gradient(#5a636ac1,#284d5800),url(apartment-building-city-with-copy-space.jpg);
+  background-size: cover;
+  height: calc(100vh - 64px);
+  height: 657px;
+  margin-top: -105px;
+}
+.clock{
+  color: #d2deeb;
+  font-size: 40px;
+}
+.intro h1{
+  color: #0D1F23;
+  padding-top: 32px;
+  font-size: 150px;
+  margin-left: 30px;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards; 
+}
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-50px); /* بداية النص أعلى قليلاً */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* نهاية الحركة تكون في مكانها الطبيعي */
+  }
+}
+.intro p{
+  margin-left: 60px;
+  margin-top: -120px;
+  color:#0D1F23;
+  font-size: 40px;
+  letter-spacing: 15px;
+
+}
+ul{
+  margin-top: 70px;
+  font-size: 25px;
+  list-style: none;
+  line-height: 45px;
+  margin-left: 20px;
+}
+
+.bus{
+  margin-top: 30px;
+  font-size: 18px;
+  border: 2px solid #0D1F23;
+  color: #0D1F23;
+  background-color: #0d1f2300;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-left: 20px;
+  transition: 0.4s;
+}
+.bu-home{
+  margin-right: -40px;
+}
+.bus:hover{
+  color: #AFB3B7;
+  background-color: #0D1F23;
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+
+
+.about-h{
+  color: #AFB3B7;
+}
+.body-about{
+  background-color: #2d4a53;
+  height: 1500px;
+  margin-top: -25px;
+}
+.body-about h1{
+  color: #AFB3B7;
+  font-size: 35px;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+.body-about p{
+  font-size: 25px;
+  margin-left: 20px;
+  margin-top: -15px;
+}
+.body-about ul{
+  margin-top: -20px;
+  color: #AFB3B7;
+  font-size: 18px;
+}
+
+.body-about-h{
+  padding-top: 50px;
+}
+
+
+
+@media(max-width :700px){
+  .body-about{
+    height: 2000px;
+    padding: 0px 10px;
+  }
+  .body-about h1{
+    font-size: 22px;
+    margin-left: 2px;
+  }
+  .body-about p{
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .body-about ul{
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+/* nav */
+@media(max-width :700px){
+  .img-nav{
+    display: none;
+  }
+  .about-h{
+    font-size: 20px;
+  }
+  .contener1{
+    display: flex;
+    justify-content:space-between;
+    padding: 0px 10px;
+    height: 50px;
+  }
+  .header .links .icon{
+    width: 40px;
+  }
+  .header .links ul{
+    min-width: 150px;
+    background-color:#afb3b7f6 ;
+  }
+  a{
+    font-size: 15px;
+    margin:5px 10px;
+  }
+  .clock{
+    font-size: 27px;
+  }
+  .intro h1{
+    padding-top: 50px;
+    font-size: 70px;
+    margin-left: 12px;
+  }
+  .intro p{
+    margin-top: -50px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-left: 50px;
+  }
+  .intro{
+    margin-top: -48px;
+    height:670px ;
+  }
+  .bu-home{
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+  }
+  .bus{
+    width: 200px;
+    margin-left: 80px;
+
+  }
+  ul{
+    margin-top: 40px;
+    font-size: 15px;
+    margin-left: -30px;
+    line-height: 25px;
+  }
+}
