@@ -1,0 +1,81 @@
+main h1{
+    text-align: center;
+    color: #c1c5c9;
+    font-size: 80px ;
+    margin-top: 30px;
+}
+.cont-model{
+    height: 750px;
+}
+.col{
+    display: flex;
+    justify-content: center;
+}
+.row{
+    width: 1500px;
+}
+.card-text{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.card-bu{
+    width: 200px;
+    margin-left: 30px;
+    box-shadow: none;
+    background-color: #0D1F23;
+    border: 2px solid #0D1F23;
+    border-radius: 25px;
+    transition: 0.4s;
+}
+.card-bu:hover{
+    background-color: #0d1f2300;
+    color: #0D1F23;
+}
+
+
+@media(max-width :700px){
+    .header1 h1{
+      font-size: 30px;
+    }
+    .contener{
+      display: flex;
+      justify-content:space-between;
+      padding: 0px 10px;
+      height: 50px;
+    }
+    .car-icon {
+  display: none;
+    }
+    .header .links .icon{
+      width: 40px;
+    }
+    .header .links ul{
+      min-width: 150px;
+      background-color:#afb3b7f6 ;
+    }
+    a{
+      font-size: 15px;
+      margin:5px 10px;
+    }
+  }
+
+  @media(max-width :700px){
+    .v1{
+        font-size: 40px ;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .col{
+        margin-left: -550px;
+        margin-bottom: 30px;
+    }
+
+    .cont-model{
+        width: 380px;
+        height: 2100px;
+    }
+  }
