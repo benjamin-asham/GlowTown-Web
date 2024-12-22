@@ -14,7 +14,7 @@ body {
 }
 
 .intro {
-    background-image: linear-gradient(rgba(92, 98, 120, 0.34), rgba(4, 9, 30, 0.7)), url(../uni/images/mesmerizing-view-lincoln-cathedral-uk-rainy-day.jpg);
+    background-image: linear-gradient(rgba(92, 98, 120, 0.34), rgba(4, 9, 30, 0.7)), url(mesmerizing-view-lincoln-cathedral-uk-rainy-day.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
