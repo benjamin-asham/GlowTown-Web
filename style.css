@@ -5,7 +5,9 @@ body {
     background-color: #2D4A53;
     font-family: "Work Sans", sans-serif;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .header {
     background-color: #0D1F23;
     /* position: sticky;
