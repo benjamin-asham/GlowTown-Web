@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // التحقق إذا كان هناك أي حقل فارغ
         if (!email || !password || !address || !city || !phone || !zip) {
             // إذا كان هناك حقل فارغ، منع إرسال النموذج
-            alert('Your all input not compleated | لن تكتمل جميع مدخلاتك ');
+            alert('Your all input not compleated | لم تكتمل جميع بياناتك ');
             event.preventDefault(); // منع إرسال النموذج
         }
     });
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // التحقق إذا كانت الحقول فارغة
             if (!email || !password) {
-                alert('Your all input not compleated | لن تكتمل جميع مدخلاتك ')
+                alert('Your all input not compleated | لم تكتمل جميع بياناتك ')
                 event.preventDefault();  // منع إرسال النموذج إذا كانت الحقول فارغة
             }
         });
